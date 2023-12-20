@@ -1,0 +1,46 @@
+.card {
+    background-color: burlywood;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 75%; 
+    display: inline-block;
+    margin: 10px; 
+    vertical-align: top; 
+}
+
+.card:hover {
+    box-shadow: 0 80px 160px 0 rgba(255,0,255,0.2);
+}
+
+.order-button {
+    background-color: mediumslateblue;
+    font-weight: bold;
+    width: 100%; 
+    height: 30%;
+    margin-left: 0;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s; 
+    border: none;
+    border-radius: 5px;
+}
+
+.order-button:hover {
+    font-weight: bolder;
+    background-color: lightseagreen;
+}
+
+img {
+    width: 85%;
+    height: auto;
+}
+
+/* Táblázat formázása */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    box-sizing: border-box;
+}

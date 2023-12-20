@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asztalfoglalás</title>
+    <link rel="stylesheet" href="styles/reserv.css">
+</head>
+<body>
+    <header>
+        <h1>Asztalfoglalás</h1>
+    </header>
+    <div class="menu">
+        <button id="news" class="menu-button">Hírek</button>
+        <button id="order" class="menu-button">Online rendelés</button>
+        <button id="reservation" class="menu-button">Asztalfoglalás</button>
+    </div>
+    <div>
+        <form id="urlapForm">
+            <label for="nev">Név:</label>
+            <input type="text" id="nev">
+            <span id="nev-error" class="error-message"></span>
+            <br>
+
+            <span>Válasszon pizzát!</span>
+            <input type="radio" id="marg" name="pizza" value="Margherita">
+            <label id="margID" for="margherita">Margherita</label>
+            <input type="radio" id="pepp" name="pizza" value="Pepperoni">
+            <label id="pepID" for="pepperoni">Pepperoni</label>
+            <span id="radio-error" class="error-message"></span>
+            <br>
+
+            <span>Ital:</span>
+            <input type="checkbox" id="cola" name="cola" value="CocaCola">
+            <label for="cola">CocaCola</label>
+            <input type="checkbox" id="viz" name="viz" value="Víz">
+            <label for="viz">Víz</label>
+            <br>
+
+            <label for="szin">Asztal dekor szín:</label>
+            <input type="color" id="szin" name="szin">
+            <br>
+
+            <label for="datum">Dátum:</label>
+            <input type="date" id="datum">
+            <br>
+
+            <button type="submit">Foglalás</button>
+
+        </form>
+    </div>
+
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/reservation.js"></script>
+</body>
+</html>

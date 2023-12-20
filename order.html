@@ -1,0 +1,173 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/order.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="logo-link"><h1 class="logo">PizzaPlace</h1></a>
+        </div>
+        <div class="menu">
+            <button id="news" class="menu-button">Hírek</button>
+            <button id="order" class="menu-button">Online rendelés</button>
+            <button id="reservation" class="menu-button">Asztalfoglalás</button>
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <!-- Pizza Margherita kártya -->
+                    <td>
+                        <div class="card">
+                            <img src="media/margherita.jpeg" alt="Pizza Margherita">
+                            <div class="container">
+                                <h4><b>Pizza Margherita</b></h4> 
+                                <!-- Gomb hozzáadása a modálhoz -->
+                                <button class="order-button" onclick="openModal('MargheritaModal')">Rendelés</button>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- Pizza Pepperoni kártya -->
+                    <td>
+                        <div class="card">
+                            <img src="media/pepperoni.jpg" alt="Pizza Pepperoni">
+                            <div class="container">
+                                <h4><b>Pizza Pepperoni</b></h4> 
+                                <!-- Gomb hozzáadása a modálhoz -->
+                                <button class="order-button" onclick="openModal('PepperoniModal')">Rendelés</button>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- Pizza Veggie kártya -->
+                    <td>
+                        <div class="card">
+                            <img src="media/veggie.png" alt="Pizza Veggie">
+                            <div class="container">
+                                <h4><b>Pizza Veggie</b></h4> 
+                                <!-- Gomb hozzáadása a modálhoz -->
+                                <button class="order-button" onclick="openModal('VeggieModal')">Rendelés</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Pizza Hawaiian kártya -->
+                    <td>
+                        <div class="card">
+                            <img src="media/hawaiian.jpg" alt="Pizza Hawaiian">
+                            <div class="container">
+                                <h4><b>Pizza Hawaiian</b></h4> 
+                                <!-- Gomb hozzáadása a modálhoz -->
+                                <button class="order-button" onclick="openModal('HawaiianModal')">Rendelés</button>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- BBQ Chicken Pizza kártya -->
+                    <td>
+                        <div class="card">
+                            <img src="media/bbq.jpg" alt="BBQ Chicken Pizza">
+                            <div class="container">
+                                <h4><b>BBQ Chicken Pizza</b></h4> 
+                                <!-- Gomb hozzáadása a modálhoz -->
+                                <button class="order-button" onclick="openModal('BBQModal')">Rendelés</button>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- Vegán Pizza kártya -->
+                    <td>
+                        <div class="card">
+                            <img src="media/vegan.jpg" alt="Vegán Pizza">
+                            <div class="container">
+                                <h4><b>Vegán Pizza</b></h4> 
+                                <!-- Gomb hozzáadása a modálhoz -->
+                                <button class="order-button" onclick="openModal('VeganModal')">Rendelés</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Modal tartalom - Pizza Margherita -->
+            <div id="MargheritaModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('MargheritaModal')">&times;</span>
+                    <h2>Pizza Margherita</h2>
+                    <p>Méret: Kicsi, Közepes, Nagy</p> 
+                    <p>Extra feltétek: Szalámi, Gomba, Olívabogyó</p>
+                    <!-- Itt lehet további információkat megjeleníteni a pizzáról -->
+                </div>
+            </div>
+
+            <!-- Modal tartalom - Pizza Pepperoni -->
+            <div id="PepperoniModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('PepperoniModal')">&times;</span>
+                    <h2>Pizza Pepperoni</h2>
+                    <p>Méret: Kicsi, Közepes, Nagy</p> 
+                    <p>Extra feltétek: Pepperoni, Hagyományos szósz, Sajt</p>
+                    <!-- Itt lehet további információkat megjeleníteni a pizzáról -->
+                </div>
+            </div>
+
+            <!-- Modal tartalom - Pizza Veggie -->
+            <div id="VeggieModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('VeggieModal')">&times;</span>
+                    <h2>Pizza Veggie</h2>
+                    <p>Méret: Kicsi, Közepes, Nagy</p> 
+                    <p>Extra feltétek: Paprika, Spenót, Feta sajt</p>
+                    <!-- Itt lehet további információkat megjeleníteni a pizzáról -->
+                </div>
+            </div>
+
+            <!-- Modal tartalom - Pizza Hawaiian -->
+            <div id="HawaiianModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('HawaiianModal')">&times;</span>
+                    <h2>Pizza Hawaiian</h2>
+                    <p>Méret: Kicsi, Közepes, Nagy</p> 
+                    <p>Extra feltétek: Sonka, Ananász, Sajt</p>
+                    <!-- Itt lehet további információkat megjeleníteni a pizzáról -->
+                </div>
+            </div>
+
+            <!-- Modal tartalom - BBQ Chicken Pizza -->
+            <div id="BBQModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('BBQModal')">&times;</span>
+                    <h2>BBQ Chicken Pizza</h2>
+                    <p>Méret: Kicsi, Közepes, Nagy</p> 
+                    <p>Extra feltétek: BBQ csirke, Hagyományos szósz, Sajt</p>
+                    <!-- Itt lehet további információkat megjeleníteni a pizzáról -->
+                </div>
+            </div>
+
+            <!-- Modal tartalom - Vegán Pizza -->
+            <div id="VeganModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('VeganModal')">&times;</span>
+                    <h2>Vegán Pizza</h2>
+                    <p>Méret: Kicsi, Közepes, Nagy</p> 
+                    <p>Extra feltétek: Zöldségek, Vegán sajt</p>
+                    <!-- Itt lehet további információkat megjeleníteni a pizzáról -->
+                </div>
+            </div>
+        </div>
+        
+        <script src="scripts/modal.js"></script>
+        <script src="scripts/buttons.js"></script>
+        <script src="scripts/order.js"></script>
+    </div>
+</body>
+</html>
